@@ -10,6 +10,12 @@ public class Main {
         int answer1 = arraySolution1.firstDuplicate(a);
         System.out.println(answer1);
 
+        //firstNotRepeatingCharacter
+        String s = "abacabad";
+        firstNotRepeatingCharacter arraySolution2 = new firstNotRepeatingCharacter();
+        char answer2 = arraySolution2.firstNotRepeatingCharacter(s);
+        System.out.println(answer2);
+
         //isCryptSolution
         String[] crypt2 = {"SEND", "MORE", "MONEY"};
         char[][] solution2 = {{'O', '0'},
