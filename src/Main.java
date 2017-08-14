@@ -24,6 +24,20 @@ public class Main {
         int[][] answer3 = arraySolution3.rotateImage(array3);
         System.out.println(answer3);
 
+        //sudoku2
+        char[][] grid = {{'.', '.', '.', '1', '4', '.', '.', '2', '.'},
+        {'.', '.', '6', '.', '.', '.', '.', '.', '.'},
+        {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+        {'.', '.', '1', '.', '.', '.', '.', '.', '.'},
+        {'.', '6', '7', '.', '.', '.', '.', '.', '9'},
+        {'.', '.', '.', '.', '.', '.', '8', '1', '.'},
+        {'.', '3', '.', '.', '.', '.', '.', '.', '6'},
+        {'.', '.', '.', '.', '.', '7', '.', '.', '.'},
+        {'.', '.', '.', '5', '.', '.', '.', '7', '.'}};
+        sudoku2 arraysolution4 = new sudoku2();
+        boolean answer4 = arraysolution4.sudoku2(grid);
+        System.out.println(answer4);
+
         //isCryptSolution
         String[] crypt2 = {"SEND", "MORE", "MONEY"};
         char[][] solution2 = {{'O', '0'},
