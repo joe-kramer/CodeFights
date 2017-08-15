@@ -56,24 +56,39 @@ public class Main {
 //        System.out.println(answer5);
 
         //removeKFromList
-        removeKFromList linkedListSolution1 = new removeKFromList();
-        ListNode<Integer> node3 = new ListNode<>(3);
-        ListNode<Integer> node1 = new ListNode<>(1);
-        ListNode<Integer> node2 = new ListNode<>(2);
-        ListNode<Integer> node3b = new ListNode<>(1);
-        ListNode<Integer> node4 = new ListNode<>(4);
-        ListNode<Integer> node5 = new ListNode<>(5);
+//        removeKFromList linkedListSolution1 = new removeKFromList();
+//        ListNode<Integer> node3 = new ListNode<>(3);
+//        ListNode<Integer> node1 = new ListNode<>(1);
+//        ListNode<Integer> node2 = new ListNode<>(2);
+//        ListNode<Integer> node3b = new ListNode<>(1);
+//        ListNode<Integer> node4 = new ListNode<>(4);
+//        ListNode<Integer> node5 = new ListNode<>(5);
+//
+//        node3.next = node1;
+//        node1.next = node2;
+//        node2.next = node3b;
+//        node3b.next = node4;
+//        node4.next = node5;
+//        node5.next = null;
+//
+//        int k = 3;
+//
+//        ListNode<Integer> answer6 = linkedListSolution1.removeKFromList(node3, k);
+//        System.out.println(answer6);
 
-        node3.next = node1;
-        node1.next = node2;
-        node2.next = node3b;
-        node3b.next = node4;
-        node4.next = node5;
-        node5.next = null;
+        //isListPalindrome
+        isListPalindrome linkedListSolution2 = new isListPalindrome();
+        ListNode<Integer> firstNode = new ListNode<>(0);
+        ListNode<Integer> secondNode = new ListNode<>(2);
+        ListNode<Integer> thirdNode = new ListNode<>(2);
+        ListNode<Integer> fourthNode = new ListNode<>(3);
 
-        int k = 3;
+        firstNode.next = secondNode;
+        secondNode.next = thirdNode;
+        thirdNode.next = fourthNode;
+        fourthNode.next = null;
 
-        ListNode<Integer> answer6 = linkedListSolution1.removeKFromList(node3, k);
-        System.out.println(answer6);
+        boolean answer7 = linkedListSolution2.isListPalindrome(firstNode);
+        System.out.println(answer7);
     }
 }
