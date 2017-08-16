@@ -77,18 +77,44 @@ public class Main {
 //        System.out.println(answer6);
 
         //isListPalindrome
-        isListPalindrome linkedListSolution2 = new isListPalindrome();
-        ListNode<Integer> firstNode = new ListNode<>(0);
-        ListNode<Integer> secondNode = new ListNode<>(2);
-        ListNode<Integer> thirdNode = new ListNode<>(2);
-        ListNode<Integer> fourthNode = new ListNode<>(3);
+//        isListPalindrome linkedListSolution2 = new isListPalindrome();
+//        ListNode<Integer> firstNode = new ListNode<>(0);
+//        ListNode<Integer> secondNode = new ListNode<>(2);
+//        ListNode<Integer> thirdNode = new ListNode<>(2);
+//        ListNode<Integer> fourthNode = new ListNode<>(3);
+//
+//        firstNode.next = secondNode;
+//        secondNode.next = thirdNode;
+//        thirdNode.next = fourthNode;
+//        fourthNode.next = null;
+//
+//        boolean answer7 = linkedListSolution2.isListPalindrome(firstNode);
+//        System.out.println(answer7);
 
-        firstNode.next = secondNode;
-        secondNode.next = thirdNode;
-        thirdNode.next = fourthNode;
-        fourthNode.next = null;
+        //addTwoHugeNumbers
+        addTwoHugeNumbers linkedListSolution3 = new addTwoHugeNumbers();
+        ListNode<Integer> a1 = new ListNode<>(1);
+//        ListNode<Integer> a2 = new ListNode<>(5432);
+//        ListNode<Integer> a3 = new ListNode<>(1999);
+//        a1.next = a2;
+//        a2.next = a3;
+        a1.next = null;
 
-        boolean answer7 = linkedListSolution2.isListPalindrome(firstNode);
-        System.out.println(answer7);
+        ListNode<Integer> b1 = new ListNode<>(9999);
+        ListNode<Integer> b2 = new ListNode<>(9999);
+        ListNode<Integer> b3 = new ListNode<>(9999);
+        ListNode<Integer> b4 = new ListNode<>(9999);
+        ListNode<Integer> b5 = new ListNode<>(9999);
+        ListNode<Integer> b6 = new ListNode<>(9999);
+        b1.next = b2;
+        b2.next = b3;
+        b3.next = b4;
+        b4.next = b5;
+        b5.next = b6;
+        b6.next = null;
+
+        ListNode<Integer> answer8 = linkedListSolution3.addTwoHugeNumbers(a1, b1);
+
+        System.out.println(answer8);
     }
 }
