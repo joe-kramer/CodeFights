@@ -1,5 +1,6 @@
 import arrays.*;
 import linkedList.*;
+import sorting.*;
 
 import java.util.LinkedList;
 
@@ -137,5 +138,14 @@ public class Main {
 
         ListNode<Integer> answer9 = linkedListSolution4.mergeTwoLinkedLists(l1, l2);
         System.out.println(answer9);
+
+
+        //BUBBLESORT
+        bubbleSort sortingSolution1 = new bubbleSort();
+
+        int[] list = {2, 4, 1, 5};
+
+        int [] answer10 = sortingSolution1.bubbleSort(list);
+        System.out.println(answer10);
     }
 }
